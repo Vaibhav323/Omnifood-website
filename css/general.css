@@ -63,7 +63,6 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
-  
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -74,7 +73,7 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.grid--center-v{
+.grid--center-v {
   align-items: center;
 }
 .heading-primary,
@@ -118,15 +117,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -ms-border-radius: 9px;
-  -o-border-radius: 9px;
-  transition: background-color 0.3s;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -149,6 +140,29 @@ body {
 
   box-shadow: 0 0 0 3px #fff inset;
 }
+.link:visited,
+.link:link {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+.link:active,
+.link:hover {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+/* HELPER CLASSes */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
 }
